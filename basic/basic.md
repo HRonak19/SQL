@@ -1,19 +1,30 @@
 # Basic of SQL
 
-how to create a table in SQL ?
+## Create table  
 
-## Syntex
-> ## CREATE TABLE Table Name ;
-### Command
 ```
-Create Table Student (Rno number(2),Name varchar2(10));
+Create Table Student;
 ```
-## Command Exp
+> `Create Table` is command to make `MT` table \
+> **Student** is a Name of Table
 
-> Create Table
->> 👆 is command to make `table`
->
-> Student
->> 👆 is A name of table 
->
->>
+## add column in Table
+
+```
+Alter Table Student ADD(RollNO number(3) , Name varchar(20));
+```
+> `Alte Table` is command to add new column \
+> **ADD** is Keyword  \
+> `RollNO` is name of column  \
+> **number** is data type of column \
+> `3` is range of  number like you add max 3 digit Ex **212**
+
+## add data into table
+
+```
+Insert into Student values(&RollNo,'&Name');
+```
+> `Insert into` is command to add values \
+> **values** is Keyword \
+> **`&`** must be use befor column name \
+> you to use String or charecter must be use `'` 
