@@ -1,0 +1,15 @@
+create table 
+
+-> create table employee (empno number(3),empname varchar2(15) ,desg varchar2(10),DOJ date, salary number(7));
+
+inset 10 record using
+
+->  insert into employee values (&empno,'&empname','&desg','&date',&salary);
+
+
+
+-> /
+
+save 
+
+-> commit;
