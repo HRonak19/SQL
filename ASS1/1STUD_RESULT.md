@@ -93,4 +93,8 @@ update Stud_result set GRADE='B' where Per>=60 and Per < 80;
 update Stud_result set GRADE='C' where Per>=45 and Per < 60;
 ```
 
+# SAVE TABLE
 
+```
+commit;
+```
