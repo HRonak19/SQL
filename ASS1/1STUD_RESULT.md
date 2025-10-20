@@ -3,8 +3,9 @@
 
 <center>
 
-|RNO | Number | 5 |   
+| Column |  type | No |
 |--- |   ---  |:---:|
+|RNO | Number | 5 |   
 |SNAME| varchar2 | 20|
 |BDATE| date | - |
 |: --- :|: --- :|: --- :|
@@ -29,8 +30,9 @@ insert into Stud_Result values(101,'Raj','10-Jun-2005');
 
 <center>
 
-|SUB1 | number | 3 |
+| Column | Type | No |
 |---|---|---|
+|SUB1 | number | 3 |
 |SUB2 | number | 3 |
 |SUB3 | number | 3 |
 
@@ -58,8 +60,9 @@ update stud_result set sub3=89 where Rno=101;
 
 <center>
 
-| Total | Number | 5 |
+| Column | Type | No |
 |  ---  |  ----  |:---:|
+| Total | Number | 5 |
 | Per   | Number |5.2|
 | Grade | varchar2 | 3 |
 

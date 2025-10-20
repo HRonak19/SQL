@@ -2,8 +2,9 @@
 
 <center>
 
-| Cust_id | varchar2 | 5 |
+| Column | Type | No |
 |---|---|---|
+| Cust_id | varchar2 | 5 |
 | Cust_Name | varchar2 | 15 |
 | Cust_City | varchar2 | 15 |
 |:---:|:---:|:---:|
