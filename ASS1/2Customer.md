@@ -54,3 +54,11 @@ select * from Customer where Cust_City='Amreli' or Cust_City='Rajkot';
 ```
 select * from Customer where Cust_City='Botad';
 ```
+8 Display Customer Information in Deseending order
+```
+ select * from  Customer order by Cust_id DESC;
+```
+9 Display Informaction of Cust_Name = "Neelam"
+```
+select * from Customer where Cust_Name ='Neelam Patel';
+```
