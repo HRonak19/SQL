@@ -12,17 +12,17 @@
 </center>
 
 # Commands
-> Create Table using `Create` command
+Create Table using `Create` command
 
 ```
 create table Customer (Cust_id varchar2(5) , Cust_Name varchar2(15) , Cust_City varchar2(15));
 ```
-> add 10 Record in the table 
+add 10 Record in the table 
 
 ```
 insert into Customer values('&Cust_id','&Cust_Name','&Cust_City');
 ```
->  use ` / ` to repait first command
+use ` / ` to repait first command
 
 # Display Section
 
