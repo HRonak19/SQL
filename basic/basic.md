@@ -55,6 +55,10 @@ INSERT INTO stu values(&no,'&name','&B_date','&address');
 ```
 update stu SET NO=3 WHERE name='Won';
 ```
+update multiple
+```
+update Stud1_result set grad='B' where per>=60 and per < 80;
+```
 ## DELETE COMMAND
 ```
 DELETE FROM stu WHERE no=2;
