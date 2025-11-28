@@ -23,3 +23,23 @@ create table empone(emp_id number(6) primary key , branch_id number(6), Fname va
 ```
 insert into empone values(&emp_id,&branch_id,'&fname','&Lname','&dept','&designation',&salary,&commission);
 ```
+3 show table structuer
+```
+DESC empone;
+```
+4 combine Fname and Lname add new column name is fullname
+```
+select concat (Fname,Lname) as Fullname from empone;
+```
+5 Rename table empone to  employee_master
+```
+rename empone to employee_master;
+```
+6 employee whose salary is greater than 15000
+```
+select * From employee_master where salary >= 15000;
+```
+7 list inorder by designation
+```
+ select * from employee_master order by Designation;
+```

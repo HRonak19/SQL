@@ -1,30 +1,66 @@
-# Basic of SQL
+# Introduction to SQL commands
 
-## Create table  
+* DDL `Data Definition Language`
+* DML `Data Manipulation Language`
+* DCL `Data Control Language`
+* TCL `Transaction Control Language`
 
-```
-Create Table Student;
-```
-> `Create Table` is command to make `MT` table \
-> **Student** is a Name of Table
+# 1 DDL COMMANDS
 
-## add column in Table
+## Create Command
+```
+create table Student(NO number(2), name varchar2(10),B_Date DATE);
+```
 
-```
-Alter Table Student ADD(RollNO number(3) , Name varchar(20));
-```
-> `Alte Table` is command to add new column \
-> **ADD** is Keyword  \
-> `RollNO` is name of column  \
-> **number** is data type of column \
-> `3` is range of  number like you add max 3 digit Ex **212**
+## Alter Command
 
-## add data into table
+### 1 to add a new column 
+```
+alter table Student ADD(address varchar2(20));
+```
+### 2 To Modify exiting column
+```
+alter table Student MODIFY(address varchar2(15));
+```
+> You can modify datatype and its size
+### 3 To drop existing column
+```
+alter table student Drop column mok;
+```
+Drop command
+```
+DROP TABLE student;
+```
+ Rename command
+```
+RENAME student TO STU;
+```
+# 2 DML Commands
 
+## INSERT Commnds
+
+### 1 First Way
 ```
-Insert into Student values(&RollNo,'&Name');
+INSERT INTO stu values(1,'Qon','17/MAY/2003','botad');
 ```
-> `Insert into` is command to add values \
-> **values** is Keyword \
-> **`&`** must be use befor column name \
-> you to use String or charecter must be use `'` 
+### 2 Second Way
+```
+INSERT INTO STU(no,name,B_date,address) values (2,'Won','18-jun'2003','jayput');
+```
+### 3 third Way
+```
+INSERT INTO stu values(&no,'&name','&B_date','&address');
+```
+## UPDATE COMMAND
+```
+update stu SET NO=3 WHERE name='Won';
+```
+## DELETE COMMAND
+```
+DELETE FROM stu WHERE no=2;
+```
+
+# delete This type of table 
+```
+PURGE TABLE "BIN$hudh46ZSQI+9DolBWAaQTg==$0";
+```
