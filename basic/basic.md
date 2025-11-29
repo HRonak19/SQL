@@ -27,6 +27,10 @@ alter table Student MODIFY(address varchar2(15));
 ```
 alter table student Drop column mok;
 ```
+Truncate command
+```
+TRUNCATE table stu;
+```
 Drop command
 ```
 DROP TABLE student;
@@ -67,4 +71,17 @@ DELETE FROM stu WHERE no=2;
 # delete This type of table 
 ```
 PURGE TABLE "BIN$hudh46ZSQI+9DolBWAaQTg==$0";
+```
+## SELECT COMMAND 
+display list of table 
+```
+select * from tab;
+```
+display one table 
+```
+select * from stud;
+```
+display to column combine using `concat`
+```
+select concat (column1,column2) as column3 from STUD;
 ```
